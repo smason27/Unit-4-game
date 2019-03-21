@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href = "assets/css/reset.css">
+    <link rel="stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href = "assets/css/style.css">
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                  <h1 class="display-4">Overwatch RPG</h1>
+    </div>
+
+    <div>
+        <div class="container game-width">
+            <div class="row">
+                <div class="col-md-6 match">
+                    <div id="attacker"></div>
+                    <h1>Player One</h1>
+                    <h2 id="playerHealth"></h2>
+                </div>
+            
+                <div class="col-md-6 match">
+                    <div id="opponent"></div>
+                    <h1>Enemy</h1>
+                    <h2 id="enemyHealth"></h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" id="attackEnemy" class="btn btn-danger">Attack</button>
+                </div>
+            </div>
+        </div>
+<!-- SHOW HERO STATS BELOW NAME -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div>
+                        <img class="hero-img" src="assets/images/Soldier 76.jpg" data-hero="soldier">
+                        <h3>Soldier 76 Health: 200 hp</h3>
+                        <h3>Soldier Attack Damage: 12</h3>
+                    </div>  
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <img class="hero-img" src="assets/images/D.VA.jpg" data-hero="dva">
+                        <h3>D.VA Health: 300hp</h3>
+                        <h3>D.VA Attack Damage: 5</h3>
+                    </div>
+                    
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <img class="hero-img" src="assets/images/Tracer.jpg" data-hero="tracer">
+                        <h3>Tracer Health: 150hp</h3>
+                        <h3>Tracer Attack Damage: 15</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <img class="hero-img" src="assets/images/Roadhog.jpg" data-hero="roadhog">
+                        <h3>Roadhog Health: 400hp</h3>
+                        <h3>Roadhog Attack Damage: 8</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src = "assets/javascript/game.js"></script>
+
+</body>
+</html>

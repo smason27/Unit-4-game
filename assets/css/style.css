@@ -1,0 +1,19 @@
+.match {
+    background-color: beige;
+    height: 250px;
+    width: 50%;
+    float: left;
+}
+
+.game-width {
+    max-width: 960px;
+    margin: auto;
+}
+
+.container {
+    text-align: center;
+}
+img {
+    width: 25%;
+    height: 50%;
+}
