@@ -1,5 +1,5 @@
-// VARIABLES
 
+// VARIABLES
 var chooseHero = true;
 var chooseEnemy = true;
 var userHero = "";
@@ -16,32 +16,23 @@ var enemiesChosen = 0;
 // OBJECT HERO/ABILITIES
 var heroes = {
     dva : {
-        // DVA STARTING HEALTH
         heroHealth: 250,
-        // DVA ATTACK DAMAGE
         heroAttack: 7,
     },
     soldier : {
-        // SOLDIER STARTING HEALTH
         heroHealth: 175,
-        // SOLDIER ATTACK DAMAGE
         heroAttack: 15,
     },
     roadhog : {
-        // ROADHOG STARTING HEALTH
         heroHealth: 275,
-        //OADHOG ATTACK DAMAGE
         heroAttack: 3,
     },
     tracer : {
-        // TRACER STARTING HEALTH
         heroHealth: 150,
-        // TRACER ATTACK DAMAGE
         heroAttack: 18,
     }  
 }
 
-// FUNCTION GAME START()
 $("document").ready(function() {
      $(".hero-img").on("click", function() {
          if(chooseHero) {
@@ -76,25 +67,23 @@ function attack() {
     userAttack = updateUserAttack;
 
     if(updateEnemyHealth <= 0) {
-        alert("you have defeated enemy")
-        alert("select another enemy to continue the fight!")
+        alert("you have defeated enemy! select another enemy to continue the fight!");
         $("#enemyHealth").text("Defeated" )
         enemiesChosen += 1
         chooseEnemy = true
-        console.log(enemiesChosen)
-
+        console.log(enemiesChosen);
+        checkWin();
     } else {
         counterAttack();
     }
-
-    checkWin();
 }
 
 function checkWin() {
-    if(enemiesChosen === 3);
-    alert("YOU WIN")
+    if(enemiesChosen === 3) {
+        alert("YOU WIN");
+    } 
 }
-
+    
 function counterAttack() {
     var updateUserHealth = userHealth - enemyAttack;
     userHealth = updateUserHealth;
